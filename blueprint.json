@@ -1,0 +1,10 @@
+{
+  "$schema": "https://playground.wordpress.net/blueprint-schema.json",
+  "meta": {"title": "Meu Financeiro — Personal Finance Dashboard", "description": "A blank WordPress finance dashboard demo. No screenshot data is included."},
+  "landingPage": "/finance-dashboard/",
+  "login": true,
+  "steps": [
+    {"step": "installPlugin", "pluginData": {"resource": "url", "url": "https://raw.githubusercontent.com/caiohferreiradev/meu-financeiro-wordpress/main/meu-financeiro-wordpress.zip"}, "options": {"activate": true, "targetFolderName": "financas-pessoais"}},
+    {"step": "runPHP", "code": "<?php $page = get_page_by_path('finance-dashboard'); if (!$page) { wp_insert_post(['post_title' => 'Finance Dashboard', 'post_name' => 'finance-dashboard', 'post_status' => 'publish', 'post_type' => 'page', 'post_content' => '[meu_financeiro]']); }"}
+  ]
+}
