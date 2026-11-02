@@ -1,6 +1,6 @@
 {
   "$schema": "https://playground.wordpress.net/blueprint-schema.json",
-  "meta": {"title": "Meu Financeiro — Personal Finance Dashboard", "description": "A blank WordPress finance dashboard demo. No screenshot data is included."},
+  "meta": {"title": "Meu Financeiro — Personal Finance Dashboard", "author": "Caio Henrique Ferreira", "description": "A blank WordPress finance dashboard demo. No screenshot data is included."},
   "landingPage": "/finance-dashboard/",
   "login": true,
   "steps": [
